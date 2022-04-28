@@ -1,0 +1,17 @@
+npts 40 40 48                        # num.grid points in xyz
+gridfld K76M.maps.fld                # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C HD N OA SA        # receptor atom types
+ligand_types A C NA OA N P           # ligand atom types
+receptor K76M.pdbqt                  # macromolecule
+gridcenter 12.378 6.069 1.193        # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map K76M.A.map                       # atom-specific affinity map
+map K76M.C.map                       # atom-specific affinity map
+map K76M.NA.map                      # atom-specific affinity map
+map K76M.OA.map                      # atom-specific affinity map
+map K76M.N.map                       # atom-specific affinity map
+map K76M.P.map                       # atom-specific affinity map
+elecmap K76M.e.map                   # electrostatic potential map
+dsolvmap K76M.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

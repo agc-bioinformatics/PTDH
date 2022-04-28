@@ -1,0 +1,17 @@
+npts 40 40 58                        # num.grid points in xyz
+gridfld E266Q.maps.fld               # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C HD N OA SA        # receptor atom types
+ligand_types A C NA OA N P           # ligand atom types
+receptor E266Q.pdbqt                 # macromolecule
+gridcenter 12.378 6.069 1.193        # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map E266Q.A.map                      # atom-specific affinity map
+map E266Q.C.map                      # atom-specific affinity map
+map E266Q.NA.map                     # atom-specific affinity map
+map E266Q.OA.map                     # atom-specific affinity map
+map E266Q.N.map                      # atom-specific affinity map
+map E266Q.P.map                      # atom-specific affinity map
+elecmap E266Q.e.map                  # electrostatic potential map
+dsolvmap E266Q.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant
